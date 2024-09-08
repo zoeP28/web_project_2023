@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <title>Upload</title>
+
+  </head>
+  <body  style="background:#1e293b;">
+    <nav>
+      <a href="#" class="logo">e kata<img src="./icons/1.png" alt="Logo" class="logo-image" width="32" height="32"></a>
+      
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="nav-list" id="nav_elements">
+        <li>
+          <a href="map.html" class="nav-link"><img src="./icons/home.png" alt="Home icon"  width="16" height="16">Home</a>
+        </li>
+        <li>
+          <a href="upload.html" class="nav-link"><img src="./icons/upload.png" alt="upload icon"  width="16" height="16">Upload</a>
+        </li>
+        <li>
+          <a href="charts.html" class="nav-link"><img src="./icons/charts.png" alt="charts icon"  width="16" height="16">Charts</a>
+        </li>
+        <li>
+          <a href="leaderboard.html" class="nav-link"><img src="./icons/leaderboard.png" alt="leader icon"  width="16" height="16">Leaderboard</a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-link"><img src="./icons/settings.png" alt="settings icon"  width="16" height="16">Settings</a>
+        </li>
+      </ul>
+      <a></a>
+    </nav>
+
+    <header class="upload-header">
+      <h2>Upload</h2>
+    </header>
+
+      <div class="card">
+        <img src="./icons/stores.png" alt="Logo" >
+          <div class="layer" style="--color:#0b5ed194" >
+              <div class="input-group"  id="input">
+                  <input type="file" class="form-control" id="storesUpload" aria-label="Upload" accept=".json" onchange="storesUpload(this)" />
+                  <button class="button" type="button" id="firstCardBtn">Submit</button>
+                </div>
+          </div>
+          
+      </div>
+      
+      <div class="card">
+        <img src="./icons/products.png" alt="Logo" >
+          <div class="layer"style="--color:#da0b0b94">
+              <div class="input-group" id="input">
+                  <input type="file" class="form-control" id="catsUpload" aria-label="Upload" accept=".json" onchange="catsUpload(this)" />
+                  <button class="button" type="button" id="secondCardBtn">Submit</button>
+                </div>
+          </div>
+      </div>
+      <div class="card">
+        <img src="./icons/prices.png" alt="Logo" >
+          <div class="layer"style="--color:#000000b3">
+              <div class="input-group"  id="input">
+                  <input type="file" class="form-control" id="pricesUpload" aria-label="Upload" accept=".json" onchange="pricesUpload(this)" />
+                  <button class="button" type="button" id="thirdCardBtn">Submit</button>
+                </div>
+          </div>
+      </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/upload.js"></script>
+  <script src="./js/authorize.js"></script>
+
+    
+    
+  </body>
+</html>

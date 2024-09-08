@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Register</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+    <div class="box">
+        <div class="form" form action="">
+            <h2>Create Account</h2>
+            <div class="inputBox">
+                <input type="text" required id="user">
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required id="email">
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required id="pass">
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="button_block">
+                <button type="button" class="button" id="register_btn" onclick="register()"><a> Register </a></button>
+                <a href="./index.html"><img src="./icons/backtologin.png" alt="back" class="back"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/register.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/first_of_the_month.js"></script>
+</body>
+</html>

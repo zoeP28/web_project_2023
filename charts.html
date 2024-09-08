@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chart</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+  </head>
+  <body style="background: #1e293b;">
+    <nav>
+      <a href="#" class="logo">e kata<img src="./icons/1.png" alt="Logo" class="logo-image" width="32" height="32"></a>
+      
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="nav-list" id="nav_elements">
+        <li>
+          <a href="map.html" class="nav-link"><img src="./icons/home.png" alt="Home icon"  width="16" height="16">Home</a>
+        </li>
+        <li>
+          <a href="upload.html" class="nav-link"><img src="./icons/upload.png" alt="upload icon"  width="16" height="16">Upload</a>
+        </li>
+        <li>
+          <a href="charts.html" class="nav-link"><img src="./icons/charts.png" alt="charts icon"  width="16" height="16">Charts</a>
+        </li>
+        <li>
+          <a href="leaderboard.html" class="nav-link"><img src="./icons/leaderboard.png" alt="leader icon"  width="16" height="16">Leaderboard</a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-link"><img src="./icons/settings.png" alt="settings icon"  width="16" height="16">Settings</a>
+        </li>
+      </ul>
+      <a></a>
+    </nav>
+
+    <header class="upload-header" id="chart_header">
+      <h2>Charts</h2>
+    </header>
+      <section id="month_sel">
+        <div class="container">
+                <label class="form-label" id="month_head" style="display: none;">Year</label>
+                 <select id="yearSelect" class="form-select form-control" style="display: none;">
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+                <label class="form-label" id="month_head">Month</label>
+                <select id="month" class="form-select form-control">
+                  <option value="" disabled selected>Month</option>
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+              </div>
+              <div class="button_block">
+                <div class="btn2 disabled" id="search"><a>Search</a></div>
+            </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="p-5">
+        <div class="container" id="chart">
+                  <canvas id="numberOfOffers" width="400" height="400"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="p-5" id="chart2">
+      <div class="container" id="cat_head" >
+        <label class="form-label" >Category</label>
+          <select id="categoryDropdown" class="form-select form-control">
+            <option value="" disabled selected> Category </option>
+          </select>
+      </div>
+      <canvas id="avgChart" width="350" height="350"></canvas>
+  </section>
+  
+   
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js" integrity="sha512-TW5s0IT/IppJtu76UbysrBH9Hy/5X41OTAbQuffZFU6lQ1rdcLHzpU5BzVvr/YFykoiMYZVWlr/PX1mDcfM9Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/authorize.js"></script>
+  </body>
+</html>

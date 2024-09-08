@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Evaluation</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav>
+      <a href="javascript:void(0);" onclick="window.close();" class="flex items-center gap-2" id="disc_a"> <img src="./icons/back.png" alt="back" class="h-5 w-5"> Back</a>
+    </nav>
+    <header class="upload-header" id="chart_header">
+      <h1 style="font-weight:bold;">Offers</h1>
+    </header>
+
+    <div class="filler" id="discount_filler">
+      <div class="table" id="discounts_table">
+        <table
+          id="discountsTable"
+          data-search="true"
+          data-unique-id="discount_id"
+          data-sort-name="product"
+          data-sort-order="desc"
+          data-detail-view="true"
+          data-detail-formatter="detailFormatter">
+          <thead>
+            <tr>
+              <th data-field="product" data-sortable="true">Product</th>
+              <th data-field="price" data-sortable="true">Price</th>
+              <th data-field="date" data-sortable="true">
+                Date
+              </th>
+              <th data-field="username" data-sortable="true">User</th>
+              <th data-field="likes" data-sortable="true">Likes</th>
+              <th data-field="dislikes" data-sortable="true">Dislikes</th>
+              <th data-field="inventory" data-sortable="true">inventory</th>
+              <th data-field="overallScore" data-sortable="true">
+                Score
+              </th>
+              <th
+                data-field="operate"
+                data-formatter="offerRatingButtons"
+                data-events="operateEvents">
+                Like/Dislike
+              </th>
+              <th
+                data-field="invButton"
+                data-formatter="inventoryButton"
+                data-events="operateEvents">
+                Availability
+              </th>
+              <th
+                id="deleteBtn"
+                data-field="deleteButton"
+                data-formatter="deleteButton"
+                data-events="operateEvents">
+                Delete
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.0/bootstrap-table.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/evaluation.js"></script>
+
+  </body>
+</html>

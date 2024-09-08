@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Forgot Password</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="./login.css" />
+  <link rel="stylesheet" type="text/css" href="./style.css" />
+  
+</head>
+<body>
+  <div class="box">
+    <div class="form">
+      <h2>Forgot Password</h2>
+      <div class="inputBox">
+        <input type="email" required id="email">
+        <span>Email</span>
+        <i></i>
+      </div>
+      <div class="button_block">
+        <button type="button" class="button" id="reset_btn" onclick="reset_pass()"><a> Reset Password</a></button>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./js/reset_password.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
+

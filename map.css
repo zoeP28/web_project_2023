@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    height: 100vh;
+}
+.left-side {
+    flex: 0.5;
+    background-color: #1e293b;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.toggle-button {
+    background-color: #1e293b;
+    border: 2px solid #1e293b;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.toggle-button:hover {
+    background-color: #f0f0f0;
+    color: #1e293b;
+}
+
+
+.right-side {
+    flex: 3;
+    display: flex;
+    background-color: #e2e8f0;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 20px;
+
+}
+
+.left-side a{
+    font-weight: bold;
+    padding: 2px;
+}
+
+.left-side a:hover {
+    color: #00C9E0;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+#nav a{
+    font-weight: bold;
+    padding: 2px;
+}
+
+#nav a:hover {
+    color: #00C9E0;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+#map {
+    flex-grow: 1;
+    background-color: #1e293b;
+    border-radius: 45px !important;
+   /* Placeholder bg-color */
+}

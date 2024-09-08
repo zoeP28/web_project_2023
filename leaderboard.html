@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Leaderboard</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    
+    <link
+      href="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.css"
+      rel="stylesheet" />
+  <header class="upload-header">
+    <h2>Leaderboard</h2>
+  </header>
+  <body class="leader_body">
+    <nav>
+      <a href="#" class="logo">e kata<img src="./icons/1.png" alt="Logo" class="logo-image" width="32" height="32"></a>
+      
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="nav-list" id="nav_elements">
+        <li>
+          <a href="map.html" class="nav-link"><img src="./icons/home.png" alt="Home icon"  width="16" height="16">Home</a>
+        </li>
+        <li>
+          <a href="upload.html" class="nav-link"><img src="./icons/upload.png" alt="upload icon"  width="16" height="16">Upload</a>
+        </li>
+        <li>
+          <a href="charts.html" class="nav-link"><img src="./icons/charts.png" alt="charts icon"  width="16" height="16">Charts</a>
+        </li>
+        <li>
+          <a href="leaderboard.html" class="nav-link"><img src="./icons/leaderboard.png" alt="leader icon"  width="16" height="16">Leaderboard</a>
+        </li>
+        <li>
+          <a href="settings.html" class="nav-link"><img src="./icons/settings.png" alt="settings icon"  width="16" height="16">Settings</a>
+        </li>
+      </ul>
+      <a></a>
+    </nav>
+    </section>
+    <div class="filler">
+      <div class="table" id="leaderboard_table">
+        <table
+          id="leaderBoard"
+          data-search="true"
+          data-height="500"
+          data-pagination="true"
+          data-pagination-h-align="left"
+          data-pagination-detail-h-align="right">
+          <thead>
+            <tr>
+              <th data-field="username" data-sortable="true">User</th>
+              <th data-field="overallScore" data-sortable="true">
+                Score
+              </th>
+              <th data-field="tokens" data-sortable="true">
+                Montly Tokens
+              </th>
+              <th data-field="overallTokens" data-sortable="true">
+                Tokens - overall
+              </th>
+            </tr>
+          </thead>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.21.2/dist/bootstrap-table.min.js"></script>
+    <script src="./js/leaderboard.js"></script>
+    <script src="./js/authorize.js"></script>
+  </body>
+</html>

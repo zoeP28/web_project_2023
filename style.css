@@ -1,0 +1,911 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: #1e293b;
+    color: #FFF;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    margin-right: 250px;
+    font-weight: bold;
+}
+
+h3:hover {
+    color: #00C9E0;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15%;
+    background: transparent;
+    transition: all 0.50s ease;
+}
+
+
+.logo {
+    color: #00C9E0 !important;
+    font-size: 35px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.logo-image {
+    width: 32px;
+    height: 32px;
+}
+
+.logo-image2 {
+    width: 650px;
+    height: 650px;
+    box-shadow: -10px 10px 30px #00C9E0;
+    border-radius: 330px;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list a {
+    margin: 0 5px;
+    padding: 5px 10px;
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.50s ease;
+}
+
+.nav-list a:hover {
+    color: #00C9E0;
+}
+
+
+#selects {
+    margin-left: 60px;
+}
+
+.btn {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    border: 1px solid;
+    color: #00C9E0;
+    background: transparent;
+    font-weight: bold;
+}
+
+.btn2 {
+    position: relative;
+    left: 20px;
+    top: 10px;
+    display: inline-block;
+    color: #1e293b;
+    background: #e2e8f0;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all 0.40s ease;
+}
+
+.btn2:hover {
+    border: 2px solid;
+    color: #00C9E0;
+    background: transparent;
+    cursor: pointer;
+}
+
+#menu-icon {
+    color: #FFF;
+    font-size: 38px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 0 15%;
+}
+
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.m-text h1 {
+    font-size: 90px;
+    font-weight: 800;
+    mask-border: 5px;
+}
+
+.m-text p {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.upload-header {
+    color: white; 
+    padding: 5px; 
+    margin-top: 150px; 
+    margin-left: 730px;
+    font-size: larger;
+  }
+
+
+.upload-header:hover {
+    color: #00C9E0;
+  }
+  
+
+#upload-heading {
+    margin-left: 800px;
+    margin-top: 200px;
+  }
+
+#chart_header {
+    position: relative;
+    left: 50px;
+}
+
+#charts_logout {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #FFF;
+    background: #00C9E0;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all 0.40s ease;
+}
+
+#charts_logout:hover {
+    border: 2px solid;
+    color: #00C9E0;
+    background: transparent;
+    
+}
+#month {
+    width: 300%s; 
+    height: 30px; 
+    font-size: 14px; 
+    padding: 5px; 
+    background: #e2e8f0;
+  }
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    top: 250px;
+    right: 400px;
+    padding: 5px;
+
+}
+
+.card2{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    top: 250px;
+    right: 400px;
+    padding: 5px;
+
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #e2e8f0;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    transform: translateY(-400px);
+    visibility: hidden;
+    background-color: var(--color);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    cursor: pointer;
+    cursor: pointer;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 2em;
+}
+.card:hover .layer{
+    visibility: visible;
+    transform: translateY(0);
+    top: 0;
+}
+
+.card button {
+    color: white;
+    background-color: #1e293b;
+    opacity: 0.9;
+    width: 20%;
+    border-radius: 5px !important;
+    padding: 5px;
+    border: none;
+}
+
+.card button:hover {
+    background-color: #00C9E0;
+}
+
+.show-layer {
+    visibility: visible;
+    transform: translateY(0);
+    top: 0;
+}
+
+.button_block{
+    position: relative;
+    bottom: 0px;
+    right: 20px;
+}
+
+.button {
+    margin: 20%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button a{
+    display: block;
+    padding: 10%;
+    text-decoration: none;
+    box-shadow: -10px 10px 30px #00C9E0;
+    color: var(--button-backgound-color);
+    transition: all 0.8s ease-in-out;
+    transform: 
+        perspective(200px) 
+        translate(0, 0);
+    border-radius: 20px;
+    }
+
+    
+.button a::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    top: 80px;
+    left: 244px;
+    transform: 
+        rotate(0deg) 
+        skewY(-45deg);
+}
+    
+.button a::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: -20px;
+    left: -10px;
+    transform: 
+        rotate(0deg) 
+        skewX(-45deg);
+    transform: 
+        rotate(45deg) 
+        scewY(-45deg);
+}
+
+.button a:hover{
+    transform: 
+        translate(10px, -10px);
+    box-shadow: -30px 40px 40px var(--button-shadow-color);
+    background: var(--button-background-hover-color);
+    color: var(--button-shadow-color);
+}
+
+.button a:active{
+    scale: 80%;
+    transition: all 0.2s ease-in-out;
+        background-color: var(--button-shadow-color);
+    color: var(--button-backgound-color);
+    box-shadow: none;
+}
+
+.table-container {
+      max-height: 500px; /* Set the maximum height you want */
+      overflow: auto;
+    }
+
+.leader_body {
+    background: #1e293b;
+}
+
+#input {
+    position: relative;
+    text-align: center;
+}
+
+
+#nav_elements a {
+    font-weight: bold;
+    padding: 2px;
+}
+
+#nav_elements a:hover {
+    color: #00C9E0;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+#disc_a{
+    font-weight: bold;
+    padding: 2px;
+}
+
+#disc_a:hover {
+    color: #00C9E0;
+    background-color: #e2e8f0;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s, padding 0.3s;
+}
+
+#month_sel {
+    position: relative;
+    margin-top: 300px;
+    right: 850px;
+    color: #00C9E0;
+}
+
+#pick {
+    color:#1e293b;
+    font-weight: bold;
+}
+
+#chart {
+    display: none; 
+    position: relative;
+    top: 210px;
+    right: 1065px;
+    background-color: #e2e8f0;  
+    box-shadow: -20px 10px 30px #00C9E0;
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0; 
+    border-radius: 30px; 
+    overflow: hidden;
+}
+
+#chart2 {
+    position: absolute;
+    top: 200px;
+    right: 250px;
+}
+
+#categoryDropdown {
+    width: 31%;
+    background-color: #e2e8f0;
+    font-size: smaller;
+}
+
+#month_head{
+    position: relative;
+    left: 10px;
+}
+
+#cat_head {
+    color:#00C9E0;
+    position: relative;
+    right: 90px;
+    top: 50px;
+}
+
+.btn2.disabled {
+    opacity: 0.5;
+    pointer-events: none;  
+    cursor: not-allowed;
+}
+
+#leaderboard_table{
+    position: absolute;
+    top: 200px;
+    right: 380px !important;
+    background-color: #1e293b;
+    box-shadow: -20px 10px 30px #00C9E0;
+    font-style: italic;
+    width: 640px !important;
+    height: 480px !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-collapse: separate;
+    border-spacing: 0; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    padding: 20px; 
+    position: absolute;
+    color: white !important;
+    background-color: #1e293b;
+}
+
+#discounts_table_parent {
+    position: relative; 
+    height: 100vh;
+}
+#discounts_table {
+    color: white;
+    background-color: #1e293b;
+    box-shadow: -20px 10px 30px #00C9E0;
+    font-style: italic;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0; 
+    border-radius: 15px; 
+    overflow: hidden; 
+    padding: 20px; 
+    position: absolute;
+    top: 50%; 
+    left: 80%; 
+    transform: translate(-15%, -50%); 
+}
+
+#discounts_table .search input {
+    color: #00C9E0;
+}
+
+#discounts_table thead {
+    background-color: #2c3e50;
+}
+
+#discounts_table th, #discounts_table td {
+    padding: 12px 15px;
+    border: 1px solid #3d5567;
+    text-align: left;
+}
+
+#discounts_table tr:first-child th { /* Rounds top corners of the first row */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#discounts_table tr:last-child td { /* Rounds bottom corners of the last row */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#discounts_table tr:hover {
+    background-color: #34495e;
+}
+
+#discounts_table tbody tr:nth-child(even) {
+    background-color: #283747;
+}
+
+
+
+#leaderboard_table th, #change_cred_tbl1 th, #change_cred_tbl2 th{
+    color:white;
+}
+
+#leaderboard_table td, #change_cred_tbl1 td, #change_cred_tbl2 td {
+    color: #00C9E0;
+    font-weight: bold;
+}
+
+#discount_filler {
+    position: relative;
+    right: 400px;
+    
+}
+
+#discount_filler  th:hover{
+    cursor: pointer;
+    color:#00C9E0;
+}
+
+#discount_card {
+    position: absolute;
+    left: 550px;
+    top: 150px;
+    box-shadow: -20px 10px 30px #00C9E0;
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+    background-color: #e2e8f0;
+}
+
+#discount_card option {
+    font-weight: bold;
+}
+
+#discountForm, #discountForm select, #discountForm input, #discountForm button {
+    background: #1e293b;
+    color: #00C9E0;
+    border: 1px solid #00C9E0;
+    position: relative;
+    text-align: center;
+}
+
+#discountForm option {
+    color: white;
+}
+
+#discountForm button {
+    position: absolute;
+    top: 362px;
+    width: 100%;
+    right: 0px;
+    font-weight: bold;
+}
+
+#discountForm button:hover {
+   background: #00C9E0;
+   color:white;
+}
+
+/* Style to hide the number input arrows */
+.form-group input[type="number"] {
+    -moz-appearance: textfield; 
+}
+
+#user_settings {
+    position: relative;
+    right: 280px;
+}
+
+#change_cred{
+    position: relative;
+    top: 50px;
+    right: 30px;
+    width: 140%;
+    font-weight: bold;
+}
+
+#change_pass{
+    position: relative;
+    top: 90px;
+    right: 50px;
+    width: 140%;
+    font-weight: bold;
+}
+
+.swal2-confirm {
+    background-color: #00C9E0 !important;   /* Change 'blue' to any color you prefer */
+    color: #1e293b !important;             /* Text color */
+    border-radius: 5px !important;       /* Rounded corners */
+}
+ 
+.swal2-cancel {
+    background-color: #e2e8f0 !important;
+    color: #1e293b !important;
+}
+
+#return_home{
+    position: relative;
+    top: 250px;
+    right: 23px;
+    width: 145%;
+    color: #00C9E0;
+    font-weight: bold;
+}
+
+#emptyServerBtn {
+    position: relative;
+    color: #00C9E0;
+    top: 220px;
+    right: 20px;
+    width: 145%;
+    font-weight: bold;
+}
+
+#change_cred_tbl1 {
+    position: relative;
+    top: 70px;
+    right: 100px;
+    background-color: #1e293b;
+    border-collapse: collapse; 
+    width: 930px;
+    height: 520px; 
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: auto; 
+    color: white;
+    box-shadow: -20px 10px 30px #00C9E0;
+    border-radius: 20px;
+    font-size: 0.85rem; /* Slightly smaller font size for the entire table */
+}
+
+#change_cred_tbl1 th,
+#change_cred_tbl1 td {
+    padding: 8px 12px; /* Reduced padding to make rows less tall */
+    border: 1px solid white; 
+}
+
+#change_cred_tbl1 th {
+    background-color: #00C9E0;
+    font-size: 0.9rem; /* Adjust th font size if needed */
+}
+
+#change_cred_tbl1 tr:nth-child(even) {
+    background-color: #283747;
+}
+
+#change_cred_tbl1 tr:hover {
+    background-color: #34495e;
+}
+
+
+/* Remove borders from first and last cells in each row */
+#change_cred_tbl1 tr td:first-child,
+#change_cred_tbl1 tr td:last-child {
+    border-right: none;
+}
+
+
+#change_cred_tbl2 {
+    display: none;
+    position: relative;
+    background-color: #1e293b;
+    border-collapse: collapse; 
+    width: 65%; 
+    margin: auto; 
+    color: white;
+    border-radius: 20px;
+    box-shadow: -20px 10px 30px #00C9E0;
+    font-size: 0.85rem; /* Slightly smaller font size for the entire table */
+}
+
+#change_cred_tbl2 th,
+#change_cred_tbl2 td {
+    padding: 8px 12px; /* Reduced padding to make rows less tall */
+    border: 1px solid white; 
+}
+
+#change_cred_tbl2 th {
+    background-color: #00C9E0;
+    font-size: 0.9rem; /* Adjust th font size if needed */
+}
+
+#change_cred_tbl2 tr:nth-child(even) {
+    background-color: #283747;
+}
+
+#change_cred_tbl2 tr:hover {
+    background-color: #34495e;
+}
+
+
+#change_cred_tbl1 th,
+#change_cred_tbl1 td {
+    padding: 12px 16px;
+    border: 1px solid white; /* Add borders to cells */
+}
+
+#settings_logout {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #FFF;
+    background: #00C9E0;
+    border-radius: 30px;
+    font-size: 15px;
+    border: 2px solid transparent;
+    transition: all 0.40s ease;
+}
+
+#toggle_button {
+    position: absolute;
+    bottom: 590px;
+    left: 685px;
+    width: 10%;
+    height: 5%;
+    color: white;
+    font-weight: bolder;
+    opacity: 0.8;
+}
+
+#toggle_button:hover {
+    opacity: 1;
+}
+
+
+#settings_logout:hover {
+    border: 2px solid;
+    color: #00C9E0;
+    background: transparent;
+    
+}
+
+#settings_logo:hover {
+    
+    color: #00C9E0;
+}
+
+.dis_user{
+    position: relative;
+    top: 100px;
+    color: #00C9E0;
+    width: 150%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user_vertical_bar{
+    background: #1e293b;
+
+}
+
+@media (max-width:1350px) {
+    nav {
+        padding: 20px 5%;
+    }
+
+    section {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width:950px) {
+    .m-text h1 {
+        font-size: 70px;
+    }
+
+    .m-text p {
+        font-size: 22px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 9px 27px;
+    }
+}
+
+@media (max-width:860px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #00C9E0;
+        text-align: left;
+        transition: all 0.50s ease;
+    }
+
+    .nav-list a {
+        color: #FFF;
+        padding: 1rem;
+        margin: 1rem;
+        border-left: 2px solid #FFF;
+        display: block;
+    }
+
+    .nav-list a:hover {
+        background: #FFF;
+        color: #00C9E0;
+    }
+
+    .nav-list.open {
+        top: 100%;
+    }
+}
+
+@media (max-width:750px) {
+    .m-text h1 {
+        font-size: 50px;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #1e293b;
+    overflow: hidden;
+  }
+
+
+  nav {
+    background-color: #1e293b;
+    color: #FFF;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  #map {
+    flex: 8; /* 80% width for the map */
+    height: 100vh;
+  }
+  
+  .search-container {
+    flex: 2; /* 20% width for the search container */
+    background-color: #f7f7f7;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .grid-container {
+  display: grid;
+  grid-template-columns: 10% 90%; /* Adjusted column widths */
+}
+
+#map-container {
+    overflow: hidden;
+}
+
+#map {
+  height: 100vh;
+  width: 80%;
+}
+
+.search-container {
+  background-color: #1e293b;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  margin-top: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 90%; /* Adjusted column widths */
+}
+
+#map-container {
+  overflow: hidden;
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.selectpicker {
+    width: 100%;
+    color: white;
+  }
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}

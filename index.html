@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
+  </head>
+
+
+  <body>
+    <div class="box">
+      <div class="form" form action="">
+        <h2> Sign in</h2>
+        <div class="inputBox">
+          <input type="text" required id="username">
+          <span>Username</span>
+          <i></i>
+        </div>
+        <div class="inputBox">
+          <input type="password" required id="password">
+          <span>Password</span>
+          <i></i>
+        </div>
+        <div class="links">
+          <a href="forgotpass.html">Forgot password</a>
+          <a href="./register.html">Signup</a>
+        </div>
+
+      <div class="button_block">
+        <button type="button" class="button" id="login_btn" onclick="login()"><a> Login</a> </button>
+    </div>
+                  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/first_of_the_month.js"></script>
+  </body>
+</html>
